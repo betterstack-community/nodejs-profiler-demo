@@ -1,27 +1,34 @@
-# Title of the project
+# Registration Application
 
-Description of the project.
+A registration application with password hashing for security.
 
-**Tutorial**: [Link to corresponding BetterStack tutorial]()
-
-![Screenshot or GIF of the application in action](screenshot.png)
+**Tutorial**: [Profiling Node.js Applications](https://betterstack.com/community/guides/scaling-nodejs/profiling-nodejs-applications/)
 
 ## 🟢 Prerequisites
 
-A list of requirements and package versions that the reader needs to build and
-run the project.
-
-- The first thing.
-- The second thing.
+Ensure you have Node.js and npm installed on your machine.
 
 ## 📦 Getting started
 
-A brief guide to setting up the project.
+- Clone this repository to your machine:
 
-- Do the first thing.
-- Do the next thing.
+```bash
+git clone https://github.com/betterstack-community/nodejs-profiler-demo
+```
+
+- `cd` into the project folder and run `npm install` to download dependencies.
+- Execute the command below to start the development server:
+
+```bash
+node index.js
+```
+
+Try out the registration using the following command:
+
+```command
+curl -X POST -H "Content-Type: application/json" -d '{"password":"userPassword123"}' http://localhost:3000/register
+```
 
 ## ⚖ License
 
-The code used in this project and in the linked tutorial are licensed under the
-[Apache License, Version 2.0](LICENSE)
+The code used in this project and in the linked tutorial are licensed under the [Apache License, Version 2.0](LICENSE).
